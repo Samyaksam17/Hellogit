@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html{
+            font-size: 20px;
+        } */
+        .parent{
+            font-size: 40px;
+        }
+        .boi{
+            font-size: 30px;
+        }
+        .box{
+            background-color: aqua;
+            margin: 10px;
+        }
+        .px{ 
+            width: 200px;
+        }
+        .vw{
+            width: 10vw;
+        }
+        .em{
+            width: 10em;
+        }
+        .rem{
+            width: 10rem;
+        }
+
+
+
+
+
+
+        .rems li {
+            font-size: 1.5rem;
+            /* 1.5*16px=24px */
+        }
+        .ems li {
+            font-size: 1.5em;
+        }
+
+
+
+
+
+
+        h1{
+            color: crimson;
+        }
+        .boxx{
+            background-color: rgb(255, 0, 98);
+            width: 300px;
+            padding: 15px; 
+            margin: 50px;
+            border: 10px groove rgb(0, 255, 55);
+
+        }
+
+
+
+
+        
+        .Flex>div{
+            width: 200px;
+            background-color: yellowgreen;
+            margin: 25px;
+
+        }
+        .Flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-self: ;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- units in html  -->
+    <!-- rem >> root element  -->
+    <!-- em >> parent element  -->
+
+    <div class="boi">
+        <div class="box px">I am 200 px wide </div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="parent">
+        <div class="box em">I am 10em wide</div>
+        </div>
+        <div class="box rem">I am 10 rem</div>
+
+    </div>
+    <!-- difference btw rem and em  -->
+
+    <ul class="rems">
+        <li>one</li>
+        <li>two</li>
+        <li>three
+            <ul>
+                <li>Three a</li>
+                <li>Three b
+                    <ul>
+                        <li>Three b a</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="ems">
+        <!-- 1.5*16px=24px  -->
+        <li>one</li>
+        <li>two</li>
+        <li>three 
+            <!-- 1.5*16px=24px*1.5=36px  -->
+            <ul>
+                <li>Three a</li>
+                <li>Three b 
+                    <!-- 1.5*16px=24px*1.5=36px *1.5= 54px  -->
+                    <ul>
+                        <li>Three b a</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- CSS box Model  -->
+    <!-- Margin Padding Border  -->
+    
+    <div>
+        <h1>CSS BOX Model</h1>
+        <p class="boxx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus nobis excepturi possimus!
+         Cum aperiam quo voluptatem facilis sapiente quod eaque, excepturi, exercitationem amet enim fugit 
+         velit saepe iste dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum similique
+          soluta rem vel omnis labore asperiores corporis eligendi sit magni consectetur ratione molestiae alias 
+          aperiam, iste officiis! Corporis, harum quod.
+        </p>
+        <h2>Pushed away</h2>
+
+    </div>
+
+    <!-- FLEX BOX MODEL  -->
+    <h1>Flex box Model</h1>
+    <div class="Flex">
+        <div>One</div>
+        <div>two</div>
+        <div>three</div>
+    </div>
+    
+
+
+
+
+</body>
+</html>
