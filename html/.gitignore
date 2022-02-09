@@ -1,0 +1,4 @@
+# all files with extension .txt are ignored
+*.txt
+# for particular file
+# abc.txt
